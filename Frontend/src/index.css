@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+    scroll-behavior: smooth;
+
+    /* Fonts */
+    --storyFont: 'Playfair Display';
+    --headingsFont: 'Cormorant';
+    --bodyFont: 'Lora';
+    --arabicFont: "Lateef";
+    
+    /* Primary Colors */
+    --background: #EDE8DC ;
+    --text: #6B4F3F  ;
+    --Buttons: #D4A96A  ;
+    --secondary: #A5B68D  ;
+
+
+    
+
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+@layer utilities{ 
+    /* For menu button that in Nav elements */
+    .toggle-btn{
+        @apply 
+        [&>#iconic::before]:translate-y-0 [&>#iconic::before]:rotate-45 
+        [&>#iconic::after]:-translate-y-0 [&>#iconic::after]:-rotate-45 
+        [&>#iconic]:bg-transparent [&>#iconic]:rotate-[720deg] 
+    }
+}
+@layer components{
+    ::-webkit-scrollbar {
+        width: 0.1rem;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: var(--primary);
+        opacity: 0.7;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--secondary2);
+    }
+
+    /* TextStyle */
+    /* Heading */
+    .headingsFont {
+        font-family: var(--headingsFont);
+    }
+    .bodyFont {
+        font-family: var(--bodyFont);
+    }
+    .arabicFont {
+        font-family: var(--arabicFont);
+    }
+    .storyFont {
+        font-family: var(--storyFont);
+    }
+    .font2 {
+        font-family: "Handjet", sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+    }
+    .Heading_01{    
+        font-family: var(--headingsFont);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 63px;
+        line-height: 115px;
+        text-transform:capitalize;   
+    }
+    .Heading_02{
+        font-family: var(--bodyFont);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 77px;
+        text-transform:capitalize;
+    }
+    .Heading_03{
+        font-family: var(--bodyFont);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 58px;
+        text-transform:capitalize;
+    }
+    .Heading_04{
+        font-family: var(--bodyFont);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 38px;
+        text-transform:capitalize;
+    }    
+    .Heading_05{
+        font-family: var(--arabicFont);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 38px;
+        text-transform:capitalize;
+    }
+    .Heading_06{
+        font-family: var(--bodyFont);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 38px;
+        text-transform:capitalize;
+    }
+    .Heading_07{
+        font-family: var(--bodyFont);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 16px;
+        text-transform:capitalize;
+    }
+    .Heading_Semi_Bold{
+        font-family: var(--bodyFont);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 36px;
+        text-transform:capitalize;
+    }
+    .Heading_Bold_01{
+        font-family: var(--headingsFont);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 63px;
+        line-height: 115px;
+        text-transform:capitalize;
+    }
+    .Heading_Bold_02{
+        font-family: var(--headingsFont);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 77px;
+        text-transform:capitalize;
+    }
+    .Heading_Bold_03{
+        font-family: var(--headingsFont);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 58px;
+        text-transform:capitalize;
+    }
+    .Heading_Bold_04{
+        font-family:  var(--headingsFont);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        text-transform:capitalize;
+    }
+    .Heading_Bold_05{
+        font-family: var(--bodyFont);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 38px;
+        text-transform:capitalize;
+    }
+    .Heading_Bold_06{
+        font-family: var(--bodyFont);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 38px;
+        text-transform:capitalize;
+    }
+    .Heading_Bold_07{
+        font-family: var(--nunito);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 38px;
+        text-transform:capitalize;
+    }
+/* Body */
+    .Body_01{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .Body_02{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 24px;
+    }
+    .Body_03{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .Body_04{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .Body_05{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .Body_06{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 16px;
+    }
+    .Body_Bold_00{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .Body_Bold_01{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .Body_Bold_02{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 24px;
+    }
+    .Body_Bold_03{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .Body_Bold_04{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .Body_Bold_05{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .Body_Bold_06{
+        font-family:var(--nunito) ;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 16px;
+    }
+    /* End of TextStyle */
+    /* Heights section after Nav fix */
+    .xxlNavHeights{
+        height: calc(100vh - 6rem) ;
+    }
+    .xlNavHeights{
+        height: calc(100vh - 5rem) ;
+    }
+    .lgNavHeights{
+        height: calc(100vh - 74px) ;
+    }
+    .mdNavHeights{
+        height: calc(100vh - 68px) ;
+    }
+    .smNavHeights{
+        height: calc(100vh - 4rem) ;
+    }
+    .mobileNavHeights{
+        height: calc(100vh - 3rem) ;
+        width: 100vw;
+    }
+    
+    /* HomePage Heights md->mobile aren't valid yet */
+    .xxlNavHomeHeights{
+        height: calc(100vh - 175px) ;
+    }
+    .xlNavHomeHeights{
+        height: calc(100vh - 150px) ;
+    }
+    .lgNavHomeHeights{
+        height: calc(100vh - 135px) ;
+    }
+    .mdNavHomeHeights{
+        height: calc(100vh - 68px) ;
+    }
+    .smNavHomeHeights{
+        height: calc(100vh - 4rem) ;
+    }
+    .mobileNavHomeHeights{
+        height: calc(100vh - 3rem) ;
+        width: 100vw;
+    }
+    
+
+    /* Input form fixed size */
+    .xxl_Input_Size{
+        min-width:480px ;
+        height: 56px;
+    }
+    .xl_Input_Size{
+        width:440px ;
+        height: 46px;
+    }
+    .lg_Input_Size{
+        width:390px ;
+        height: 40px;
+    }
+    .md_Input_Size{
+        width:320px ;
+        height: 36px;
+    }
+    .sm_Input_Size{
+        width:280px ;
+        height: 32px;
+    }
+    .mobile_Input_Size{
+        width:270px ;
+        height: 32px;
+    }
+}
